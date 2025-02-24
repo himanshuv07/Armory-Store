@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "../Style/Carousel.css";
 
 import Image1 from "../assets/Image6.jpg";
-import Image2 from "../assets/Image5.jpeg";
-import Image3 from "../assets/Images4.jpeg";
+import Image2 from "../assets/image1.jpeg";
+import Image3 from "../assets/image2.jpg";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);

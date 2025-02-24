@@ -5,6 +5,15 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+span{
+  color: gold;
+  /* background-color: gray; */
+}
+.logo{
+  color: gray;
+  /* background-color: black; */
+  /* text-decoration: underline; */
+}
 
 body {
   background-color: darkgray;

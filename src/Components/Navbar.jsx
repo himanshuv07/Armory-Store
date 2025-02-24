@@ -37,7 +37,8 @@ const Navbar = () => {
       <div className="nav-container">
         {/* Logo */}
         <div className="aside-1">
-          <img src={logo} alt="Logo" />
+          {/* <img src={logo} alt="Logo" /> */}
+          <h2 className="logo"><span>H</span>IMANSHU <span>A</span>RMORY</h2>
         </div>
 
         {/* Main Menu */}

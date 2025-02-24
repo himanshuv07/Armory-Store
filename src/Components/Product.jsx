@@ -3,55 +3,60 @@ import "../Style/Product.css"; // Import the CSS file
 import Gun1 from "../assets/Gun1.jpg";
 import Gun2 from "../assets/Gun2.jpg";
 import Gun3 from "../assets/Gun3.jpg";
+import Gun4 from "../assets/gun4.jpg";
+import Gun5 from "../assets/Gun5.jpg";
+import Gun6 from "../assets/Gun6.jpg";
+import Gun7 from "../assets/Gun7.jpg";
+import Gun8 from "../assets/Gun8.jpg";
 
 const products = [
   {
     id: 1,
-    name: "Wireless Headphones",
-    price: "$99",
+    name: "AK-47 Assault Rifle",
+    price: "$999",
     image: Gun1,
   },
   {
     id: 2,
-    name: "Smart Watch",
-    price: "$149",
+    name: "FN SCAR-H",
+    price: "$1,299",
     image: Gun2,
   },
   {
     id: 3,
-    name: "Gaming Laptop",
-    price: "$999",
+    name: "Glock 19 Pistol",
+    price: "$599",
     image: Gun3,
   },
   {
     id: 4,
-    name: "Sneakers",
-    price: "$79",
-    image: Gun1,
+    name: "Remington 700 Sniper",
+    price: "$5,500",
+    image: Gun4,
   },
   {
     id: 5,
-    name: "Smartphone",
-    price: "$599",
-    image: Gun1,
+    name: "M4A1 Carbine",
+    price: "$2,499",
+    image: Gun5,
   },
   {
     id: 6,
-    name: "Camera",
-    price: "$450",
-    image: Gun1,
+    name: "Uzi Submachine Gun",
+    price: "$1,200",
+    image: Gun6,
   },
   {
     id: 7,
-    name: "Camera",
-    price: "$450",
-    image: Gun1,
+    name: "AWM Sniper",
+    price: "$3,000",
+    image: Gun7,
   },
   {
-    id: 9,
-    name: "Camera",
-    price: "$450",
-    image: Gun1,
+    id: 8,
+    name: "Beretta M9",
+    price: "$700",
+    image: Gun8,
   },
 ];
 
@@ -63,7 +68,7 @@ const Product = () => {
         {products.map((product) => (
           <div className="product-card" key={product.id}>
             <img
-              src={product.image} 
+              src={product.image}
               alt={product.name}
               className="product-img"
             />
