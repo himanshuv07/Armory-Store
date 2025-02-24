@@ -1,0 +1,145 @@
+/* 🌍 Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: darkgray;
+}
+
+/* 🏠 Navbar Container */
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5%;
+  background: #ffffff;
+  color: black;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* 🔵 Logo */
+.aside-1 img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* 🌍 Navigation Links */
+.aside-2 {
+  display: flex;
+  gap: 30px;
+}
+
+.aside-2 h2 {
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  position: relative;
+}
+
+.aside-2 h2:hover {
+  color: #00c6ff;
+}
+
+/* 🛒 Right Section */
+.aside-3 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* 🛍️ Cart */
+.AddToCart {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+.AddToCart:hover {
+  transform: scale(1.2);
+  color: #00c6ff;
+}
+
+/* 🔑 Login Button */
+.loginBtn {
+  display: flex;
+  align-items: center;
+  background: #0a0a0a;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+  gap: 10px;
+}
+
+.loginBtn:hover {
+  background: #0080ff;
+}
+
+/* 📱 Mobile Sidebar */
+.mobile-sidebar {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 250px;
+  height: 100vh;
+  background: white;
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  padding-top: 60px;
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.mobile-sidebar.active {
+  left: 0;
+}
+
+.mobile-sidebar h2 {
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 18px;
+  border-bottom: 1px solid #ddd;
+}
+
+.mobile-sidebar h2:hover {
+  background: #00c6ff;
+  color: white;
+}
+
+.mobile-sidebar .loginBtn {
+  margin: 20px auto;
+}
+
+/* 🔽 Responsive Navbar */
+@media (max-width: 768px) {
+  .aside-2 {
+    display: none;
+  }
+
+  .aside-3 {
+    display: none;
+  }
+
+  .sidebar {
+    display: block;
+    cursor: pointer;
+  }
+}
